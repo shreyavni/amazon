@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: black;
+  border: 2px solid transparent;
+}
+nav .main ul {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 40px;
+}
+nav .main ul li {
+  color: white;
+  list-style: none;
+  border: 2px solid transparent;
+  transition: 0.25s;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+nav .main ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav .main ul li .fa-search {
+  height: 40px;
+  background-color: orange;
+  padding: 5px;
+  font-size: 25px;
+}
+nav .main ul li.search {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 90%;
+}
+nav .main ul li.search form {
+  display: flex;
+  width: 100%;
+}
+nav .main ul li.search form #p {
+  width: 100%;
+}
+nav .main ul li:hover {
+  border: 2px solid white;
+}
+nav .menu {
+  background-color: #222f3d;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+nav .menu .all {
+  color: white;
+}
+nav .menu ul {
+  width: 70%;
+  display: flex;
+  margin-left: 15px;
+}
+nav .menu ul li {
+  list-style: none;
+  margin-left: 15px;
+  border: 2px solid transparent;
+}
+nav .menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav .menu ul li:hover {
+  border: 2px solid white;
+}
+nav .menu .end a {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+
+.hero {
+  height: 50vh;
+  width: 100%;
+  padding-top: 200px;
+  background-image: url(hero.jpg);
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.hero .message {
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+.hero .message a {
+  text-decoration: none;
+  color: #007185;
+}
+
+.boxcont1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #e2e7e6;
+  margin-top: 5px;
+}
+.boxcont1 .box {
+  height: 300px;
+  border: 2px solid black;
+  width: 25vw;
+  background-color: white;
+  padding: 20px 0px 15px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.boxcont1 .box .content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.boxcont1 .box .content .b {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.boxcont1 .box .content p {
+  color: #007185;
+}
+
+.boxcont2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #e2e7e6;
+}
+.boxcont2 .boxo {
+  height: 300px;
+  border: 2px solid black;
+  width: 25vw;
+  background-color: white;
+  padding: 20px 0px 15px;
+  margin: 5px;
+}
+.boxcont2 .boxo .content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.boxcont2 .boxo .content .b {
+  background-image: url(content1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.boxcont2 .boxo .content p {
+  color: #007185;
+}
+
+footer {
+  margin-top: 15px;
+}
+footer .footpanel1 {
+  background-color: #37475a;
+  color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+footer .footpanel1 a {
+  width: 100vw;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+footer .footpanel1:hover {
+  background-color: rgba(55, 71, 90, 0.878);
+}
+footer .footpanel2 {
+  background-color: #222f3d;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footpanel2 ul {
+  margin: 20px;
+}
+footer .footpanel2 ul a {
+  display: block;
+  text-decoration: none;
+  color: #dddddd;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+footer .footpanel3 {
+  background-color: #222f3d;
+  border-top: 0.5px solid white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footpanel3 .logo {
+  background-image: url(logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100px;
+}
+footer .footpanel4 {
+  background-color: #0f1111;
+  height: 100px;
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+}
+footer .footpanel4 .pages {
+  padding-top: 25px;
+}
+footer .footpanel4 .copyright {
+  padding-top: 5px;
+}/*# sourceMappingURL=proj.css.map */
